@@ -1,0 +1,6 @@
+{
+    "require": {
+        "ramsey/uuid": "^3.7",
+        "ktamas77/firebase-php": "dev-master"
+    }
+}
