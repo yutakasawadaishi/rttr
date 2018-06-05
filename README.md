@@ -1,4 +1,4 @@
-﻿﻿# rttr
+# rttr
 
 Real Time trace route system with Firebase.
 
