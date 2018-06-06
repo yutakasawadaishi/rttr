@@ -21,17 +21,22 @@ $firebase = new \Firebase\FirebaseLib(FIREBASE_URL, FIREBASE_TOKEN);
 
 //
 
-if (isset($_COOKIE['RTTR_USER_ID'])) {
-	$userId = $_COOKIE['RTTR_USER_ID'];
+if (isset($_POST['userId'])) {
+	$userId = $_POST['userId'];
 }
 else {
-	$userId = Uuid::uuid4();
+	$userId = 'not provided';
+}
+
+if (isset($_POST['created'])) {
+	$created = $_POST['created'];
+}
+
+if (isset($created) && ($created == 'true')) {
 	$createdAt = microtime(true);
 	$createdAt = str_replace('.', '', $createdAt);
 	$createdAt = substr($createdAt, 0, -1);
 }
-
-setcookie('RTTR_USER_ID', $userId, time() + (3600 * 24 * 30)); //'30' day
 
 if (isset($_SERVER['HTTP_USER_AGENT'])) {
 	$ua = $_SERVER['HTTP_USER_AGENT'];
@@ -52,15 +57,15 @@ $timestamp = microtime(true);
 $timestamp = str_replace('.', '', $timestamp);
 $timestamp = substr($timestamp, 0, -1);
 
-if (isset($_GET['href'])) {
-	$href = $_GET['href'];
+if (isset($_POST['href'])) {
+	$href = $_POST['href'];
 }
 else {
 	$href = 'not provided';
 }
 
-if (isset($_GET['referrer']) && !empty($_GET['referrer'])) {
-	$referrer = $_GET['referrer'];
+if (isset($_POST['referrer']) && !empty($_POST['referrer'])) {
+	$referrer = $_POST['referrer'];
 }
 else {
 	$referrer = 'not provided';

@@ -6,9 +6,9 @@
 var RTTR_ADMIN = function() {
 
     //
-    var dataUrl = '/rttr/admin/app/dom.php';
+    var dataUrl = 'http://tautologii.com/rttr/admin/app/dom.php';
 
-	//
+    //
     var config = {
         apiKey: 'AIzaSyB4J0woNuwGBxGaH_7YBMQuWfV9W28U_9w',
         authDomain: 'myfirstfirebase-8a01a.firebaseapp.com',
