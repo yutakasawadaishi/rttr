@@ -13,7 +13,7 @@ require_once '../vendor/autoload.php';
 
 use \Ramsey\Uuid\Uuid;
 define('FIREBASE_URL', 'https://myfirstfirebase-8a01a.firebaseio.com');
-define('FIREBASE_TOKEN', '4IlkaQHjzGNbN2zs8AwTJ02keZtkXKtPvLLCCFrX');
+define('FIREBASE_TOKEN', ''); // FIREBASE_TOKEN from Firebase
 
 //
 
