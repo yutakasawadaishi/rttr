@@ -10,7 +10,7 @@ var RTTR_ADMIN = function() {
 
     //
     var config = {
-        apiKey: 'AIzaSyB4J0woNuwGBxGaH_7YBMQuWfV9W28U_9w',
+        apiKey: '', // YOUR_API_KEY
         authDomain: 'myfirstfirebase-8a01a.firebaseapp.com',
         databaseURL: 'https://myfirstfirebase-8a01a.firebaseio.com',
         projectId: 'myfirstfirebase-8a01a',
